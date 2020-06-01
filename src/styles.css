@@ -1,1 +1,90 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+.category {
+  font-weight: 600;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+.text-warning {
+  color: #ffc107;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.text-primary {
+  color: #007bff;
+}
+
+/*colors categories*/
+
+.blog-post {
+  color: #005cbf;
+}
+.report {
+  color: #dc3545;
+}
+.webinar {
+  color: #ffc107;
+}
+
+.small {
+  font-size: 80%;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+a:hover {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper-chat {
+    width: auto;
+    padding-right: 10px;
+  }
+  .user {
+    padding: 0px;
+  }
+}
+
+.form-control {
+  background-color: #fff0;
+  height: 50px;
+  padding-left: 40px;
+  outline: none;
+}
+
+.input-group i {
+  position: relative;
+  top: 16px;
+  left: 33px;
+  font-size: 20px;
+  color: #5e5d6c;
+}
+
+@media (max-width: 320px) {
+  .user-text {
+    width: 85%;
+  }
+  .user-info {
+    justify-content: flex-start;
+  }
+  .user-info .name {
+    max-width: 150px;
+  }
+}

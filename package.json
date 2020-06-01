@@ -7,9 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.9",
     "@angular/common": "~9.1.9",
@@ -20,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~9.1.9",
     "@angular/router": "~9.1.9",
     "rxjs": "~6.5.4",
+    "s-saqhan-v1": "0.0.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
@@ -27,9 +29,16 @@
     "@angular-devkit/build-angular": "~0.901.7",
     "@angular/cli": "~9.1.7",
     "@angular/compiler-cli": "~9.1.9",
-    "@types/node": "^12.11.1",
+    "@babel/core": "^7.9.6",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-notes": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/angular": "^5.3.19",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
+    "babel-loader": "^8.1.0",
     "codelyzer": "^5.1.2",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",

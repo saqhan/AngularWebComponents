@@ -1,17 +1,33 @@
 import { AppPage } from './app.po';
-import { browser, logging } from 'protractor';
+import {browser, by, element, logging} from 'protractor';
 
 describe('workspace-project App', () => {
   let page: AppPage;
+
+  const resultZone = element(by.id('sum-value'));
+  const testButton = element(by.id('testButton'));
 
   beforeEach(() => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+
+
+  it('Open page',() => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('storybook-app app is running!');
   });
+
+
+  it('Проверка результата', () => {
+    testButton.click();
+
+    expect(
+      resultZone.getText()
+    ).toEqual(
+      '10'
+    );
+  });
+
 
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser

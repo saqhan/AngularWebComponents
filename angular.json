@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "storybook-app"
+    }
+  },
+  "defaultProject": "storybook-app",
+  "cli": {
+    "analytics": "28aa90b3-5797-49a4-925b-3b417f0f46d4"
+  }
 }
