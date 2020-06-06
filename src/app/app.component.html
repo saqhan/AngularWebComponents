@@ -1,5 +1,12 @@
+
+<s-saqhan-header-app (clickOnMenu)="clickOnMenuFromSaqhanView($event)" [menu]="getMenu()"  [logoUrl]="getLogoUrl()" [subscribeText]="getSubscribeText()" ></s-saqhan-header-app>
 <router-outlet></router-outlet>
-<!--<app-first-page ></app-first-page>-->
+<s-saqhan-app-footer  [footerInfo]="getFooterInfo()"
+                      [footerItems]="getFooterItems()"
+></s-saqhan-app-footer>
+<s-saqhan-chat-app [mainUser]="getMainUser()" [messages]="getMessages()" ></s-saqhan-chat-app>
+
+
 
 <!--<div class="content">-->
 <!--  <span>storybook-app app is running!</span>-->

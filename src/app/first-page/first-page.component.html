@@ -7,11 +7,12 @@
 <!--  <p id="sum-value">{{result}}</p>-->
 <!--  <button class="btn btn-primary" id="testButton"  (click)="onClickButton()" >Суммировать</button>-->
 <!--</div>-->
-<s-saqhan-header-app></s-saqhan-header-app>
+
 <s-saqhan-first-slider [blogCarouselMock]="getBlog()"></s-saqhan-first-slider>
 <s-saqhan-new-blog [blogPost]="getBlogPost()"></s-saqhan-new-blog>
-<s-saqhan-popular-news [popularNews]="getPopularNews()" ></s-saqhan-popular-news>
+<s-saqhan-popular-news [bannerPopular]="getBannerPopular()"
+                       [popularNews]="getPopularNews()" ></s-saqhan-popular-news>
 <s-saqhan-events-blog [events]="getEvents()"></s-saqhan-events-blog>
-<s-saqhan-subsc-banner></s-saqhan-subsc-banner>
-<s-saqhan-app-footer></s-saqhan-app-footer>
-<s-saqhan-chat-app [mainUser]="getMainUser()" [messages]="getMessages()" ></s-saqhan-chat-app>
+<s-saqhan-subsc-banner  [subscribeText]="getSubscribeText()"
+                        [subscribeBlockText]="getSubscribeBlockText()"
+></s-saqhan-subsc-banner>

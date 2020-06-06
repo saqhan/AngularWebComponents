@@ -9,26 +9,10 @@ import { StoreAppService } from '../store-app.service';
 export class FirstPageComponent implements OnInit {
   constructor(private storeBlog: StoreAppService) {}
 
-  getBlog() {
-    return this.storeBlog.getBlog();
-  }
+  @Input() a!: number;
+  @Input() b!: number;
 
-  getBlogPost() {
-    return this.storeBlog.getBlogPost();
-  }
-  getPopularNews() {
-    return this.storeBlog.getPopularNews();
-  }
-  getEvents() {
-    return this.storeBlog.getEvents();
-  }
-
-  getMainUser() {
-    return this.storeBlog.getMainUser();
-  }
-  getMessages() {
-    return this.storeBlog.getMainUser();
-  }
+  result = 0;
 
   public amount: number;
 
@@ -39,11 +23,51 @@ export class FirstPageComponent implements OnInit {
     );
   }
 
-  @Input() a!: number;
-  @Input() b!: number;
+  /*
+  * Получаем главную новость и ленту новостей
+  */
+  public getBlog() {
+    return this.storeBlog.getBlog();
+  }
+  /*
+  * Выводим блог новых новостей
+  */
+  public getBlogPost() {
+    return this.storeBlog.getBlogPost();
+  }
+  /*
+  * Получаем популярные новости
+  */
 
-  result = 0;
+  /**
+   * Получаем Events
+   */
+  public getEvents() {
+    return this.storeBlog.getEvents();
+  }
+  /**
+  * Получаем Popular News
+  */
+  public getPopularNews() {
+    return this.storeBlog.getPopularNews();
+  }
+  /**
+   * Получаем Banner
+   */
+  public getBannerPopular() {
+    return this.storeBlog.getBannerPopular();
+  }
 
+  getSubscribeText(){
+    return this.storeBlog.getSubscribeText()
+  }
+  getSubscribeBlockText(){
+    return this.storeBlog.getSubscribeBlockText()
+  }
+
+  /*
+  *
+  */
   public onClickButton() {
     const result = this.storeBlog.sum(5,5);
     this.result = result;

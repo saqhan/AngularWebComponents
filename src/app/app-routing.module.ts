@@ -7,7 +7,7 @@ import {ThirdPageComponent} from './third-page/third-page.component';
 
 const routes: Routes = [
    {
-   path: '',
+   path: 'first-page',
    component: FirstPageComponent,
    },
    {
@@ -18,6 +18,10 @@ const routes: Routes = [
      path: 'list-items',
      component: ThirdPageComponent,
    },
+  {
+    path: '**',
+    component: FirstPageComponent,
+  }
 ];
 
 @NgModule({

@@ -127,24 +127,24 @@ export class StoreAppService {
   popularNews = [
     {
       id: 1,
-      title: 'How to quickly turn your podcast into a video script',
-      category: 'Blog Post',
-      btnText: 'Read Story',
-      img: 'https://via.placeholder.com/900',
+      title: "How to quickly turn your podcast into a video script",
+      category: "Blog Post",
+      btnText: "Read Story",
+      img: "https://via.placeholder.com/900x600?text=Popular",
     },
     {
       id: 2,
-      title: 'How to quickly turn your podcast into a video script',
-      category: 'Webinar',
-      btnText: 'Watch Webinar',
-      img: 'https://via.placeholder.com/900',
+      title: "How to quickly turn your podcast into a video script",
+      category: "Webinar",
+      btnText: "Watch Webinar",
+      img: "https://via.placeholder.com/500x500?text=Popular",
     },
     {
       id: 3,
-      title: 'How to quickly turn your podcast into a video script',
-      category: 'Report',
-      btnText: 'Read Report ',
-      img: 'https://via.placeholder.com/900',
+      title: "How to quickly turn your podcast into a video script",
+      category: "Report",
+      btnText: "Read Report ",
+      img: "https://via.placeholder.com/500x500?text=Popular",
     },
   ];
 
@@ -413,4 +413,122 @@ export class StoreAppService {
   getMessages() {
     return this.messages;
   }
+
+  menu = [
+    {
+      id: 'home-menu',
+      name: 'Home'
+    },
+    {
+      id: 'second-page',
+      name: 'Second Page'
+    },
+    {
+      id: 'list-items',
+      name: 'List Items'
+    },
+    {
+      id: 'list-items',
+      name: 'Online Chat'
+    },
+
+
+  ];
+
+  getMenu(){
+    return this.menu;
+  }
+
+  logoUrl = 'https://saqhan.github.io/wibbitz/assets/img/logo.jpg';
+  getLogoUrl(){
+    return this.logoUrl;
+  }
+
+  footerItems = [
+    {
+      title: "Solutions",
+      links: [
+        { name: "Marketing", id: "MarketingId" },
+        { name: "Social Media", id: "SocialId" },
+        { name: "Agencies", id: "AgenciesId" },
+        { name: "Internal", id: "InternalId" },
+        { name: "How to optimize", id: "HowId" },
+      ],
+    },
+    {
+      title: "Pricing",
+      links: [
+        { name: "Lorem ", id: "LoremId " },
+        { name: "Alias ", id: "AliasId " },
+        { name: "Choose ", id: "ChooseId " },
+        { name: "Language", id: "LanguageId" },
+      ],
+    },
+    {
+      title: "Resources",
+      links: [
+
+        { name: "Normal ", id: "NormalId " },
+        { name: "Month ", id: "MonthId " },
+        { name: "Time ", id: "TimeId ",
+          links: [
+            {name: 'Absolutely', id: 'AbsolutelyId' },
+            {name: 'Search', id: 'SearchId' },
+          ] },
+        { name: "Ready ", id: "ReadyId " },
+      ],
+    },
+    {
+      title: "Component ",
+      links: [
+        { name: "FooterValue ", id: "FooterValueId " },
+        { name: "Items ", id: "ItemsId " },
+        { name: "Saqhan ", id: "SaqhanId " },
+        { name: "Intocode ", id: "IntocodeId " },
+        { name: "Other ", id: "OtherId ",
+          links: [
+            {name: 'Footer', id: 'FooterId' },
+            {name: 'Header', id: 'HeaderId' },
+          ] },
+      ],
+    }
+  ];
+
+  getFooterItems (){
+    return this.footerItems;
+  }
+
+  footerInfo = {title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid asperiores.'}
+
+  getFooterInfo() {
+    return this.footerInfo;
+  }
+  bannerPopular = {
+    title: "Storyteller Circle Event Series",
+    nameLink: "Read Webinar",
+    img: "https://via.placeholder.com/900x900?text=Banner",
+  };
+
+  getBannerPopular() {
+    return this.bannerPopular;
+  }
+  subscribeText = "Subscribe";
+
+
+  getSubscribeText(){
+    return this.subscribeText;
+  }
+
+  subscribeBlockText = {
+    btnText: "Subscribe",
+    title: "Ready to take a test drive",
+    subTitle:
+      "We`ll help you elevate your video content strategy. Prices strating from $49 a month.",
+    nameLink: "See pricing",
+  };
+
+  getSubscribeBlockText(){
+    return this.subscribeBlockText;
+  }
+
 }
