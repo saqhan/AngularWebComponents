@@ -439,7 +439,10 @@ export class StoreAppService {
     return this.menu;
   }
 
-  logoUrl = 'https://saqhan.github.io/wibbitz/assets/img/logo.jpg';
+  logoUrl = {
+    img:"https://saqhan.github.io/wibbitz/assets/img/logo.jpg",
+  }
+
   getLogoUrl(){
     return this.logoUrl;
   }

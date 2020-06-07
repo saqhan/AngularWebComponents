@@ -1,5 +1,10 @@
 
-<s-saqhan-header-app (clickOnMenu)="clickOnMenuFromSaqhanView($event)" [menu]="getMenu()"  [logoUrl]="getLogoUrl()" [subscribeText]="getSubscribeText()" ></s-saqhan-header-app>
+<s-saqhan-header-app
+  (clickOnMenu)="clickOnMenuFromSaqhanView($event)"
+  [menu]="getMenu()"
+  [logoUrl]="getLogoUrl()"
+  [subscribeText]="getSubscribeText()"
+></s-saqhan-header-app>
 <router-outlet></router-outlet>
 <s-saqhan-app-footer  [footerInfo]="getFooterInfo()"
                       [footerItems]="getFooterItems()"
