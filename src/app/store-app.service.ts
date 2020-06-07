@@ -531,4 +531,44 @@ export class StoreAppService {
     return this.subscribeBlockText;
   }
 
+  secondTitle = {
+    category: 'Trends & Fashion',
+    title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+    authorName: 'Saqhan Abaev',
+    date: '7 Июнь, 2020',
+    img: 'https://via.placeholder.com/600x600?text=Title',
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut, corporis distinctio doloribus eius expedita fugiat fugit, in ipsum, laudantium mollitia necessitatibus quibusdam quo rem totam? Adipisci expedita iste quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut, corporis distinctio doloribus eius expedita fugiat fugit, in ipsum, laudantium mollitia necessitatibus quibusdam quo rem totam? Adipisci expedita iste quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut, corporis distinctio doloribus eius expedita fugiat fugit, in ipsum, laudantium mollitia necessitatibus quibusdam quo rem totam? Adipisci expedita iste quo.",
+  }
+
+  getSecondTitle(){
+    return this.secondTitle;
+  }
+
+  quoteText = {
+    text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. '
+  }
+
+  getQuoteText(){
+    return this.quoteText;
+  }
+
+  // subscribeText = "Subscribe";
+  //
+  //
+  // getSubscribeText(){
+  //   return this.subscribeText;
+  // }
+  //
+  // subscribeBlockText = {
+  //   btnText: "Subscribe",
+  //   title: "Ready to take a test drive",
+  //   subTitle:
+  //     "We`ll help you elevate your video content strategy. Prices strating from $49 a month.",
+  //   nameLink: "See pricing",
+  // };
+  //
+  // getSubscribeBlockText(){
+  //   return this.subscribeBlockText;
+  // }
+
 }

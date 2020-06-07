@@ -1,6 +1,8 @@
+<second-title-block [secondTitle]="getSecondTitle()"></second-title-block>
 <s-saqhan-line-book [banner]="getBanner()" ></s-saqhan-line-book>
-<s-saqhan-quote-text ></s-saqhan-quote-text>
+<s-saqhan-quote-text [quoteText]="getQuoteText()" ></s-saqhan-quote-text>
 <s-saqhan-author-info [author]="getAuthor()" ></s-saqhan-author-info>
-<s-saqhan-subsc-banner></s-saqhan-subsc-banner>
+<s-saqhan-subsc-banner [subscribeText]="getSubscribeText()"
+                       [subscribeBlockText]="getSubscribeBlockText()"></s-saqhan-subsc-banner>
 <s-saqhan-new-blog [blogPost]="getBlogPost()"></s-saqhan-new-blog>
 

@@ -24,6 +24,23 @@ export class SecondPageComponent implements OnInit {
     return this.storeBlog.getAuthor();
   }
 
+  getSecondTitle(){
+    return this.storeBlog.getSecondTitle();
+  }
+
+  getQuoteText(){
+    return this.storeBlog.getQuoteText();
+  }
+
+
+  getSubscribeText(){
+    return this.storeBlog.getSubscribeText();
+  }
+  getSubscribeBlockText(){
+    return this.storeBlog.getSubscribeBlockText();
+  }
+
+
   ngOnInit(): void {
   }
 
