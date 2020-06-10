@@ -1,7 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-
-
-
 .category {
   font-weight: 600;
 }
@@ -12,6 +8,10 @@
 
 .text-warning {
   color: #ffc107;
+}
+
+.custom-links {
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -49,34 +49,51 @@ a:hover {
   color: inherit;
 }
 
-@media (max-width: 375px) {
-  .wrapper {
-    width: 100%;
-  }
-  .wrapper-chat {
-    width: auto;
-    padding-right: 10px;
-  }
-  .user {
-    padding: 0px;
-  }
+/*
+  Global App CSS
+  ----------------------
+  Use this file for styles that should be applied to all components.
+  For example, "font-family" within the "body" selector is a CSS property
+  most apps will want applied to all components.
+
+  Any global CSS variables should also be applied here.
+*/
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
-.form-control {
-  background-color: #fff0;
-  height: 50px;
-  padding-left: 40px;
-  outline: none;
+/* You can add global styles to this file, and also import other style files */
+
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+a:hover {
+  text-decoration: inherit;
+  color: inherit;
 }
 
-.input-group i {
-  position: relative;
-  top: 16px;
-  left: 33px;
-  font-size: 20px;
-  color: #5e5d6c;
+.custom-link {
+  cursor: pointer;
 }
 
+.item-date .btn-custom-head {
+  margin-left: 0px;
+  height: 30px;
+  width: 70px;
+}
+
+  .btn-custom-head {
+  padding: 2px 10px !important;
+  font-size: 12px;
+  border-radius: 10px !important;
+  margin-left: 0px;
+}
 
 
 .message {
@@ -147,6 +164,32 @@ a:hover {
 
 
 
+
+
+@media (max-width: 375px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .user {
+    padding: 0px;
+  }
+}
+
+.form-control {
+  background-color: #fff0;
+  height: 50px;
+  padding-left: 40px;
+  outline: none;
+}
+
+.input-group i {
+  position: relative;
+  top: 16px;
+  left: 33px;
+  font-size: 20px;
+  color: #5e5d6c;
+}
 
 @media (max-width: 320px) {
   .user-text {

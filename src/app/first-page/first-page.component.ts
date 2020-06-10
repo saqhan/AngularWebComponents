@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { StoreAppService } from '../store-app.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-first-page',
@@ -7,7 +8,7 @@ import { StoreAppService } from '../store-app.service';
   styleUrls: ['./first-page.component.css'],
 })
 export class FirstPageComponent implements OnInit {
-  constructor(private storeBlog: StoreAppService) {}
+  constructor(private storeBlog: StoreAppService, private router: Router) {}
 
   @Input() a!: number;
   @Input() b!: number;
@@ -17,27 +18,24 @@ export class FirstPageComponent implements OnInit {
   public amount: number;
 
   ngOnInit(): void {
-    this.amount = this.storeBlog.sum(
-      this.a,
-      this.b
-    );
+    this.amount = this.storeBlog.sum(this.a, this.b);
   }
 
   /*
-  * Получаем главную новость и ленту новостей
-  */
+   * Получаем главную новость и ленту новостей
+   */
   public getBlog() {
     return this.storeBlog.getBlog();
   }
   /*
-  * Выводим блог новых новостей
-  */
+   * Выводим блог новых новостей
+   */
   public getBlogPost() {
     return this.storeBlog.getBlogPost();
   }
   /*
-  * Получаем популярные новости
-  */
+   * Получаем популярные новости
+   */
 
   /**
    * Получаем Events
@@ -46,8 +44,8 @@ export class FirstPageComponent implements OnInit {
     return this.storeBlog.getEvents();
   }
   /**
-  * Получаем Popular News
-  */
+   * Получаем Popular News
+   */
   public getPopularNews() {
     return this.storeBlog.getPopularNews();
   }
@@ -58,18 +56,36 @@ export class FirstPageComponent implements OnInit {
     return this.storeBlog.getBannerPopular();
   }
 
-  getSubscribeText(){
-    return this.storeBlog.getSubscribeText()
+  getSubscribeText() {
+    return this.storeBlog.getSubscribeText();
   }
-  getSubscribeBlockText(){
-    return this.storeBlog.getSubscribeBlockText()
+  getSubscribeBlockText() {
+    return this.storeBlog.getSubscribeBlockText();
   }
 
-  /*
-  *
-  */
+  /**
+   *
+   */
   public onClickButton() {
-    const result = this.storeBlog.sum(5,5);
+    const result = this.storeBlog.sum(5, 5);
     this.result = result;
+  }
+
+  //click on news
+  public clickOnNews({ detail }) {
+    console.log('clickOnNews', detail);
+    if (
+      detail.place === 'title' ||
+      detail.place === 'subTitle' ||
+      detail.place === 'btn read' ||
+      detail.place === 'btn-read'
+    ) {
+      this.router.navigate(['second-page']);
+    } else if (detail.place === 'category') {
+      this.router.navigate(['list-items']);
+    } else if (detail.place === 'img' && detail.item.id === 7) {
+      this.router.navigate( ['list-items']);
+      // console.log('press -', detail.item.id)
+    }
   }
 }

@@ -1,6 +1,7 @@
 
 <s-saqhan-header-app
   (clickOnMenu)="clickOnMenuFromSaqhanView($event)"
+  (clickToLogo)="clickToLogo($event)"
   [menu]="getMenu()"
   [logoUrl]="getLogoUrl()"
   [subscribeText]="getSubscribeText()"
@@ -8,6 +9,7 @@
 <router-outlet></router-outlet>
 <s-saqhan-app-footer  [footerInfo]="getFooterInfo()"
                       [footerItems]="getFooterItems()"
+                      [footerCopyright]="getFooterCopyright()"
 ></s-saqhan-app-footer>
 <s-saqhan-chat-app [mainUser]="getMainUser()" [messages]="getMessages()" ></s-saqhan-chat-app>
 

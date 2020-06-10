@@ -506,6 +506,15 @@ export class StoreAppService {
   getFooterInfo() {
     return this.footerInfo;
   }
+
+  footerCopyright = {
+    title: 'Saqhan Abaev',
+    description: 'Frontend-developer'
+  }
+  getFooterCopyright() {
+    return this.footerCopyright;
+  }
+
   bannerPopular = {
     title: "Storyteller Circle Event Series",
     nameLink: "Read Webinar",

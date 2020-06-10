@@ -8,11 +8,17 @@
 <!--  <button class="btn btn-primary" id="testButton"  (click)="onClickButton()" >Суммировать</button>-->
 <!--</div>-->
 
-<s-saqhan-first-slider [blogCarouselMock]="getBlog()"></s-saqhan-first-slider>
+<s-saqhan-first-slider
+  [blogCarouselMock]="getBlog()"
+  (clickOnNews)="clickOnNews($event)"
+></s-saqhan-first-slider>
 <s-saqhan-new-blog [blogPost]="getBlogPost()"></s-saqhan-new-blog>
-<s-saqhan-popular-news [bannerPopular]="getBannerPopular()"
-                       [popularNews]="getPopularNews()" ></s-saqhan-popular-news>
+<s-saqhan-popular-news
+  [bannerPopular]="getBannerPopular()"
+  [popularNews]="getPopularNews()"
+></s-saqhan-popular-news>
 <s-saqhan-events-blog [events]="getEvents()"></s-saqhan-events-blog>
-<s-saqhan-subsc-banner  [subscribeText]="getSubscribeText()"
-                        [subscribeBlockText]="getSubscribeBlockText()"
+<s-saqhan-subsc-banner
+  [subscribeText]="getSubscribeText()"
+  [subscribeBlockText]="getSubscribeBlockText()"
 ></s-saqhan-subsc-banner>
