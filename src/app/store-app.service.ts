@@ -1,4 +1,5 @@
 import { Injectable, Input } from '@angular/core';
+import {BlogCarouselMock} from "./res/mock/mock";
 
 @Injectable({
   providedIn: 'root',
@@ -15,82 +16,7 @@ export class StoreAppService {
   };
 
 
-  blogCarouselMock = [
-    {
-      id: 1,
-      title: 'How to optimize your Facebook & Instagram video ads for success',
-      subTitle:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aut dolore doloremque incidunt maxime quasi sint ullam.',
-      img: 'https://via.placeholder.com/900',
-      category: 'Blog Post',
-      btnText: 'Read Story',
-      main: true,
-      lenta: false,
-    },
-    {
-      id: 2,
-      title: 'Explore instagram Video: How to convert..',
-      subTitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. ',
-      img: 'https://via.placeholder.com/900',
-      category: 'Report',
-      btnText: 'Read Report',
-      main: false,
-      lenta: true,
-    },
-    {
-      id: 3,
-      title: 'Explore instagram Video: How to convert.',
-      subTitle: 'Lorem ipsum dolor sit amet.',
-      img: 'https://via.placeholder.com/900',
-      category: 'Blog Post',
-      btnText: 'Read Story',
-      main: false,
-      lenta: true,
-    },
-    {
-      id: 4,
-      title: 'Explore instagram Video: How to convert.',
-      subTitle: 'Lorem ipsum dolor sit amet.',
-      img: 'https://via.placeholder.com/900',
-      category: 'Webinar',
-      btnText: 'Read Story',
-      main: false,
-      lenta: true,
-    },
-    {
-      id: 5,
-      title: 'Last News instagram Video',
-      subTitle:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aut dolore doloremque incidunt maxime quasi sint ullam.',
-      img: 'https://via.placeholder.com/900',
-      category: 'Report',
-      btnText: 'Read Report',
-      main: false,
-      lenta: true,
-    },
-    {
-      id: 6,
-      title: 'Last News instagram Video',
-      subTitle:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aut dolore doloremque incidunt maxime quasi sint ullam.',
-      img: 'https://via.placeholder.com/900',
-      category: 'Report',
-      btnText: 'Read Report',
-      main: false,
-      lenta: true,
-    },
-    {
-      id: 7,
-      title: 'Last News instagram Video',
-      subTitle:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aut dolore doloremque incidunt maxime quasi sint ullam.',
-      img: 'https://via.placeholder.com/900',
-      category: 'Report',
-      btnText: 'Read Report',
-      main: false,
-      lenta: true,
-    },
-  ];
+  blogCarouselMock = BlogCarouselMock;
 
   getBlog() {
     return this.blogCarouselMock;

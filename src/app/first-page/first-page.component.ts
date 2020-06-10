@@ -83,8 +83,8 @@ export class FirstPageComponent implements OnInit {
       this.router.navigate(['second-page']);
     } else if (detail.place === 'category') {
       this.router.navigate(['list-items']);
-    } else if (detail.place === 'img' && detail.item.id === 7) {
-      this.router.navigate( ['list-items']);
+    } else if (detail.place === 'img') {
+      this.router.navigate( ['second-page'], {queryParams: {id: detail.item.id}});
       // console.log('press -', detail.item.id)
     }
   }
